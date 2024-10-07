@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Inscricao.Dto.Aluno>
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+<div id="app">
+    <a href="/Aluno/Index" class="btn btn-primary mr-2">Novo aluno</a>
+    <br />
+    <br />
+    <h3>Lista de Alunos</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>CPF</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="aluno in alunos" :key="aluno.alunoId">
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.email }}</td>
+                <td>{{ aluno.cpf }}</td>
+                <td colspan="2">
+                    <a style="margin-right: 5px;" v-bind:href="`/Matricula/Index/${aluno.alunoId}`" class="btn btn-primary mr-2">Matricular aluno</a>
+                    <a v-bind:href="`/Aluno/Index/${aluno.alunoId}`" class="btn btn-primary mr-2">Alterar aluno</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+@section Scripts {
+    <script>
+        const dataView = @Json.Serialize(Model)
+    </script>
+    <script src="~/js/home/index.js" asp-append-version="true" type="module"></script>
+}

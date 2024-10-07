@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/Register/index.css",
+    "inputFile": "wwwroot/css/Register/index.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/Global/site.css",
+    "inputFile": "wwwroot/css/Global/site.scss"
+  }
+]

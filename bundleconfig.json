@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "wwwroot/js/site.min.js",
+    "inputFiles": [
+      "wwwroot/js/site.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Aluno/index.min.js",
+    "inputFiles": [
+      "wwwroot/js/Aluno/index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Matricula/index.min.js",
+    "inputFiles": [
+      "wwwroot/js/Matricula/index.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/Home/index.min.js",
+    "inputFiles": [
+      "wwwroot/js/Home/index.js"
+    ]
+  }
+]
